@@ -6,6 +6,10 @@ echo "= Repository-Updater ="
 echo "======================"
 echo ""
 
+timestap=`date`
+echo "Timestamp: $timestamp"
+echo ""
+
 updateRepository () {
     echo "Updating '$1' ..."
     cd $1
