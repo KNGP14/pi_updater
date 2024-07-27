@@ -14,6 +14,6 @@ updateRepository () {
     echo ""
 }
 
-updateRepository "~/pi_watering"
-updateRepository "~/pi_lastmgmt"
-updateRepository "~/pi_updater"
+updateRepository "$HOME/pi_watering"
+updateRepository "$HOME/pi_lastmgmt"
+updateRepository "$HOME/pi_updater"
