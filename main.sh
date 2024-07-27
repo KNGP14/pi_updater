@@ -16,11 +16,13 @@ echo ""
 
 # Prüfen ob Skripte im Repo nicht aktuell laufen
 checkRepoNotInUse () {
-    
+    fileToCheck = "$1/main.py"
+    echo "Check whether '$fileToCheck' is in use ..."
 }
 
 updateRepository () {
     echo "Updating '$1' ..."
+    checkRepoNotInUse "$1"
     cd $1
     git reset --hard
     git pull
