@@ -14,6 +14,10 @@ timestamp=`date`
 echo "Timestamp: $timestamp"
 echo ""
 
+checkRunning () {
+    
+}
+
 updateRepository () {
     echo "Updating '$1' ..."
     cd $1
