@@ -16,7 +16,7 @@ echo ""
 
 # Prüfen ob Skripte im Repo nicht aktuell laufen
 checkRepoNotInUse () {
-    fileToCheck = "$1/main.py"
+    fileToCheck="$1/main.py"
     echo "Check whether '$fileToCheck' is in use ..."
 }
 
