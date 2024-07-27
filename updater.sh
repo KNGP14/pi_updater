@@ -23,5 +23,5 @@ updateRepository () {
 }
 
 updateRepository "$HOME/pi_watering"
-#updateRepository "$HOME/pi_lastmgmt"
+updateRepository "$HOME/pi_lastmgmt"
 updateRepository "$HOME/pi_updater"
