@@ -5,6 +5,8 @@ __pycache__/
 
 *.log
 *.status
+pyvenv.cfg
+bin/
 
 # C extensions
 *.so
