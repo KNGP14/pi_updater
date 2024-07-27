@@ -16,3 +16,4 @@ updateRepository () {
 
 updateRepository "~/pi_watering"
 updateRepository "~/pi_lastmgmt"
+updateRepository "~/pi_updater"
