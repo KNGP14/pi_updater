@@ -16,19 +16,19 @@ echo ""
 
 # Prüfen ob Skripte im Repo nicht aktuell laufen
 checkRepoNotInUse () {
-    fileToCheck="$1/main.py"
+    fileToCheck="$1"
     echo "Check whether '$fileToCheck' is in use ..."
 }
 
 updateRepository () {
     echo "Updating '$1' ..."
-    checkRepoNotInUse "$1"
+    checkRepoNotInUse "$2"
     cd $1
     git reset --hard
     git pull
     echo ""
 }
 
-updateRepository "$HOME/pi_watering"
-updateRepository "$HOME/pi_lastmgmt"
-updateRepository "$HOME/pi_updater"
+updateRepository "$HOME/pi_watering" "pi_watering.py"
+updateRepository "$HOME/pi_lastmgmt" "pi_lastmgmt.py"
+updateRepository "$HOME/pi_updater" ""
