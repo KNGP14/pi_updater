@@ -14,7 +14,8 @@ timestamp=`date`
 echo "Timestamp: $timestamp"
 echo ""
 
-checkRunning () {
+# Prüfen ob Skripte im Repo nicht aktuell laufen
+checkRepoNotInUse () {
     
 }
 
