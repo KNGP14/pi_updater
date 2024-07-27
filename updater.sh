@@ -6,7 +6,7 @@ echo "= Repository-Updater ="
 echo "======================"
 echo ""
 
-timestap=`date`
+timestamp=`date`
 echo "Timestamp: $timestamp"
 echo ""
 
