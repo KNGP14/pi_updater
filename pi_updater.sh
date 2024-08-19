@@ -11,17 +11,17 @@ echo "======================"
 echo ""
 
 timestamp=`date`
-echo "Timestamp: $timestamp"
+echo "Zeitstempel: $timestamp"
 echo ""
 
 checkRepoNotInUse () {
     fileToCheck="$1"
-    echo "Check whether '$fileToCheck' is in use ..."
+    echo " ❓ Prüfe, ob '$fileToCheck' derzeit ausgeführt wird ..."
     # TODO: Prüfen ob Skripte im Repo nicht aktuell laufen
 }
 
 updateRepository () {
-    echo "Updating '$1' ..."
+    echo " 🔄️ Aktualisiere Repository '$1' ..."
     checkRepoNotInUse "$2"
     cd $1
     git reset --hard
