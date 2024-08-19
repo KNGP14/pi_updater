@@ -14,10 +14,10 @@ timestamp=`date`
 echo "Timestamp: $timestamp"
 echo ""
 
-# Prüfen ob Skripte im Repo nicht aktuell laufen
 checkRepoNotInUse () {
     fileToCheck="$1"
     echo "Check whether '$fileToCheck' is in use ..."
+    # TODO: Prüfen ob Skripte im Repo nicht aktuell laufen
 }
 
 updateRepository () {
@@ -31,4 +31,5 @@ updateRepository () {
 
 updateRepository "$HOME/pi_watering" "pi_watering.py"
 updateRepository "$HOME/pi_lastmgmt" "pi_lastmgmt.py"
+updateRepository "$HOME/pi_config" "pi_config.py"
 updateRepository "$HOME/pi_updater" ""
