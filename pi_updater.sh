@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# crontab -e
-# # [updater/updater.sh] Repository-Aktualisierung über github.com
-# * * * * * $HOME/pi_updater/updater.sh > $HOME/pi_updater/updater.log 2>&1
-
 echo ""
 echo "======================"
 echo "= Repository-Updater ="
